@@ -1,4 +1,4 @@
 #!/bin/ash
-echo "Scan Type: " 
-read RESPONSE
-echo $RESPONSE
+echo "Scan Type: "
+read varniName
+echo $variName
