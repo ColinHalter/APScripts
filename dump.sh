@@ -1,22 +1,22 @@
 #1/bin/ash
-read -p 'Text Prompt: ' $vName
+read -p 'Text Prompt: ' vName
 echo $vName
 
-# if ["$vName" = "I" ] 
-# then
-# 		echo "Choose interface:"
-# 		ls -w 1 /sys/class/net
-# 			read INTERFACE
-# 		echo "How many packets:"
-# 			read P_COUNT
-# 		echo "Type of packet: (y/n)"
-# 			read P_TYPE_BOOL
-# 		if ["$P_TYPE_BOOL" = "y"] 
-# 		then
-# 			echo "Packet Type:"
-# 			read P_TYPE
-# 			tcpdump -i $INTERFACE -c $P_COUNT subtype $P_TYPE
-# 		fi
+if ["$vName" = "I" ] 
+then
+		echo "Choose interface:"
+		ls -w 1 /sys/class/net
+			read INTERFACE
+		echo "How many packets:"
+			read P_COUNT
+		echo "Type of packet: (y/n)"
+			read P_TYPE_BOOL
+		if ["$P_TYPE_BOOL" = "y"] 
+		then
+			echo "Packet Type:"
+			read P_TYPE
+			tcpdump -i $INTERFACE -c $P_COUNT subtype $P_TYPE
+		fi
 
 # # elif ["$vName" = "H" ] 
 # # then
