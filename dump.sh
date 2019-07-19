@@ -1,3 +1,4 @@
 #!/bin/ash
-read -p "Scan Type: " RESPONSE
+echo "Scan Type: " 
+read RESPONSE
 echo $RESPONSE
