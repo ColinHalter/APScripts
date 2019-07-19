@@ -1,5 +1,5 @@
 #1/bin/ash
-read -p 'Text Prompt:' vName
+read -p 'Text Prompt: ' $vName
 echo $vName
 
 # if ["$vName" = "I" ] 
