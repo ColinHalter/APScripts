@@ -18,11 +18,11 @@ then
 			tcpdump -i $INTERFACE -c $P_COUNT subtype $P_TYPE
 		fi
 
-# # elif ["$vName" = "H" ] 
-# # then
+elif ["$vName" = "H" ] 
+then
 	
-# elif ["$vName" = "P" ] 
-# then
+elif ["$vName" = "P" ] 
+then
 	
 fi
 
