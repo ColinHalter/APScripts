@@ -2,7 +2,7 @@
 read -p 'Text Prompt: ' vName
 echo $vName
 
-if ["$vName" = "I" ] 
+if ["$vName" == "I" ] 
 then
 		echo "Choose interface:"
 		ls -w 1 /sys/class/net
@@ -11,17 +11,17 @@ then
 			read P_COUNT
 		echo "Type of packet: (y/n)"
 			read P_TYPE_BOOL
-		if ["$P_TYPE_BOOL" = "y"] 
+		if ["$P_TYPE_BOOL" == "y"] 
 		then
 			echo "Packet Type:"
 			read P_TYPE
 			tcpdump -i $INTERFACE -c $P_COUNT subtype $P_TYPE
 		fi
 
-elif ["$vName" = "H" ] 
+elif ["$vName" == "H" ] 
 then
 	
-elif ["$vName" = "P" ] 
+elif ["$vName" == "P" ] 
 then
 	
 fi
